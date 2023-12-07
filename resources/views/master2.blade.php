@@ -13,7 +13,7 @@
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="#">Dovy Adeeb - 5026221033</a>
+        <a class="navbar-brand" href='/pegawai'>Dovy Adeeb - 5026221033</a>
 
         <!-- Links -->
         <ul class="navbar-nav">
