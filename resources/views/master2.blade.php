@@ -13,7 +13,7 @@
 
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href='/pegawai'>Dovy Adeeb - 5026221033</a>
+        <a class="navbar-brand" href="#">Dovy Adeeb - 5026221033</a>
 
         <!-- Links -->
         <ul class="navbar-nav">
@@ -31,8 +31,9 @@
             </a>
             <div class="dropdown-menu">
               <a class="dropdown-item" href="/pegawai">Pegawai</a>
-              <a class="dropdown-item" href="#">Link 2</a>
-              <a class="dropdown-item" href="#">Link 3</a>
+              <a class="dropdown-item" href="/meja">Meja</a>
+              <a class="dropdown-item" href="/keranjangbelanja">Keranjangbelanja</a>
+              <a class="dropdown-item" href="/nilaikuliah">nilaikuliah</a>
             </div>
           </li>
         </ul>

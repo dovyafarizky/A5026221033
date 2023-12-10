@@ -20,15 +20,15 @@
 @section('title', 'Data Pegawai')
 
 @section('konten')
-	{{-- <h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2> --}}
-	<h3>Data Pegawai</h3>
+	{{-- <h2><a>www.malasngoding.com</a></h2> --}}
+	<h3>Tambah Pembelian</h3>
 
-	<a class="btn btn-secondary" href="/pegawai" > Kembali</a>
+	<a class="btn btn-secondary" href="/keranjangbelanja" > Kembali</a>
 
 	<br/>
 	<br/>
 
-	{{-- <form action="/pegawai/store" method="post" class="form-horizontal">
+	{{-- <form action="/keranjangbelanja/storebeli" method="post" class="form-horizontal">
 		{{ csrf_field() }}
 
 
@@ -60,23 +60,21 @@
             </div>
 
         </div>
-
-
 		<tr>
-            <td><label for="nama" class="col-xs-3 col-form-label mr-2">Nama</label></td>
-            <td><input type="text" class="form-control" id="nama" name="nama"></td>
+            <td><label for="id" class="col-xs-3 col-form-label mr-2">Kode Pembelian</label></td>
+            <td><input type="number" class="form-control" id="id" name="id"></td>
           </tr>
           <tr>
-            <td><label for="jabatan" class="col-xs-3 col-form-label mr-2">Jabatan</label></td>
-            <td><input type="text" class="form-control" id="jabatan" name="jabatan"></td>
+            <td><label for="kode" class="col-xs-3 col-form-label mr-2">Kode Barang</label></td>
+            <td><input type="number" class="form-control" id="kode" name="kode"></td>
           </tr>
           <tr>
-            <td><label for="umur" class="col-xs-3 col-form-label mr-2">Umur</label></td>
-            <td><input type="text" class="form-control" id="umur" name="umur"></td>
+            <td><label for="jumlah" class="col-xs-3 col-form-label mr-2">Jumlah</label></td>
+            <td><input type="number" class="form-control" id="jumlah" name="jumlah"></td>
           </tr>
           <tr>
-            <td><label for="alamat" class="col-xs-3 col-form-label mr-2">Alamat</label></td>
-            <td><input type="textarea" class="form-control" id="alamat" name="alamat"></td>
+            <td><label for="harga" class="col-xs-3 col-form-label mr-2">Harga</label></td>
+            <td><input type="number" class="form-control" id="harga" name="harga"></td>
           </tr>
           <br/>
           <tr>
@@ -88,33 +86,27 @@
     <form action="/keranjangbelanja/storebeli" method="post" class="form-horizontal">
 		{{ csrf_field() }}
         <div class="form-group row">
-            <label class="control-label col-sm-2 align-right">Nama:</label>
+            <label class="control-label col-sm-2 align-right">Kode Barang:</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name="nama" placeholder="Masukkan Nama">
+              <input type="number" class="form-control" name="kode" placeholder="Masukkan kode barang">
             </div>
           </div>
         <div class="form-group row">
-            <label class="control-label col-sm-2 align-right" >Jabatan:</label>
+            <label class="control-label col-sm-2 align-right" >Jumlah:</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" name="jabatan" placeholder="Masukkan jabatan">
+              <input type="number" class="form-control" name="jumlah" placeholder="Masukkan jumlah barang">
             </div>
           </div>
         <div class="form-group row">
-            <label class="control-label col-sm-2 align-right" >Umur:</label>
+            <label class="control-label col-sm-2 align-right" >Harga:</label>
             <div class="col-sm-10">
-              <input type="number" class="form-control" name="umur" placeholder="Masukkan Umur">
-            </div>
-          </div>
-          <div class="form-group row">
-            <label class="control-label col-sm-2 align-right" >Alamat:</label>
-            <div class="col-sm-10">
-              <input type="text" class="form-control" name="alamat" placeholder="Masukkan Alamat">
+              <input type="number" class="form-control" name="harga" placeholder="Masukkan harga barang">
             </div>
           </div>
           <div class="form-group row">
             <div class="control-label col-sm-2 align-right" ></div>
             <div class="col-sm-10">
-                <input class="btn btn-success" type="submit" value="Simpan Data">
+                <input class="btn btn-success" type="submit" value="Beli">
             </div>
           </div>
 	</form>

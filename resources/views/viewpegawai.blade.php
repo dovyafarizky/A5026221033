@@ -6,7 +6,7 @@
     <title>View Data Pegawai</title>
 
 
-    <h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
+    {{-- <h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2> --}}
     <h3>Tambah Data Pegawai</h3>
 
     <a href="/pegawai" class="btn btn-secondary"> Kembali</a>

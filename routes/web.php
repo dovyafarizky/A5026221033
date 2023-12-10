@@ -83,3 +83,21 @@ Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus')
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 
 Route::get('/pegawai/viewpegawai/{id}','App\Http\Controllers\PegawaiController@viewpegawai');
+
+Route::get('/keranjangbelanja','App\Http\Controllers\keranjangbelanjaController@idxbelanja');
+Route::get('/keranjangbelanja/addbeli','App\Http\Controllers\keranjangbelanjaController@addbeli');
+Route::get('/keranjangbelanja/batal/{id}','App\Http\Controllers\keranjangbelanjaController@batal');
+Route::post('/keranjangbelanja/storebeli','App\Http\Controllers\keranjangbelanjaController@storebeli');
+
+Route::get('/meja','App\Http\Controllers\mejaController@idxmeja');
+Route::get('/meja/addmeja','App\Http\Controllers\mejaController@addmeja');
+Route::get('/meja/hapus/{id}','App\Http\Controllers\mejaController@hapus');
+Route::post('/meja/storemeja','App\Http\Controllers\mejaController@storemeja');
+Route::get('/meja/cari','App\Http\Controllers\mejaController@cari');
+Route::get('/meja/edit/{id}','App\Http\Controllers\mejaController@edit');
+Route::post('/meja/update','App\Http\Controllers\mejaController@update');
+
+
+Route::get('/nilaikuliah','App\Http\Controllers\NilaiKuliahController@index');
+Route::get('/nilaikuliah/tambahnilaikuliah','App\Http\Controllers\NilaiKuliahController@tambah');
+Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiKuliahController@store');
