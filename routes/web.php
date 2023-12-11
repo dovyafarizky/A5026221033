@@ -101,3 +101,11 @@ Route::post('/meja/update','App\Http\Controllers\mejaController@update');
 Route::get('/nilaikuliah','App\Http\Controllers\NilaiKuliahController@index');
 Route::get('/nilaikuliah/tambahnilaikuliah','App\Http\Controllers\NilaiKuliahController@tambah');
 Route::post('/nilaikuliah/store','App\Http\Controllers\NilaiKuliahController@store');
+
+
+Route::get('/mahasiswa','App\Http\Controllers\mahasiswaController@idxmahasiswa');
+Route::post('/mahasiswa/storemeja','App\Http\Controllers\mahasiswaController@storemahasiswa');
+Route::get('/mahasiswa/cari','App\Http\Controllers\mahasiswaController@cari');
+Route::get('/mahasiswa/edit/{id}','App\Http\Controllers\mahasiswaController@edit');
+Route::post('/mahasiswa/update','App\Http\Controllers\mahasiswaController@update');
+Route::get('/mahasiswa/viewmahasiswa/{id}','App\Http\Controllers\mahasiswaController@viewmahasiswa');
